@@ -1,0 +1,16 @@
+.add-note{
+    min-width: 70vw !important;
+    height: 80vh;
+    
+}
+
+.error-msg{
+    color:red;
+}
+
+/* @media screen and (max-width: 768px) {
+    .add-note{
+        min-width: 420px !important;
+        
+    }
+  } */
