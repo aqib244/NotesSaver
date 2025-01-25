@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import toast from 'react-hot-toast';
 
+// get notes data from localStorage
 const initialState = {
   notes: localStorage.getItem("notes") ? JSON.parse(localStorage.getItem("notes")) : []  
 };
@@ -36,7 +37,7 @@ export const notesSlice = createSlice({
   }
 });
 
-// Action creators are generated for each case reducer function
+
 export const { addNote, updateNote, deleteNote } = notesSlice.actions;
 
 export default notesSlice.reducer;
